@@ -1,3 +1,14 @@
+npm package install
+==============================================================
+npm init --y
+
+nodemon package install
+==============================================================
+npm install nodemon
+===========================
+
+
+
 …or create a new repository on the command line
 echo "# mern" >> README.md
 git init
