@@ -4,9 +4,9 @@ for ( i= 0; i<=100; i++){
 
 }
 
-for ( i= 0; i<=10; i++){
-    console.log (i+' '+"ASRAFUL ALAM AZAD");
-    console.log (i+' '+"");
+// for ( i= 0; i<=10; i++){
+//     console.log (i+' '+"ASRAFUL ALAM AZAD");
+//     console.log (i+' '+"");
 
-}
+// }
 // console.log ("Hello World");
