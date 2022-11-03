@@ -4,7 +4,7 @@
   "description": "…or create a new repository on the command line\r echo \"# mern\" >> README.md\r git init\r git add README.md\r git commit -m \"first commit\"\r git branch -M main\r git remote add origin https://github.com/asrafulalamazad/mern.git\r git push -u origin main\r …or push an existing repository from the command line\r git remote add origin https://github.com/asrafulalamazad/mern.git\r git branch -M main\r git push -u origin main\r …or import code from another repository\r You can initialize this repository with code from a Subversion, Mercurial, or TFS project.",
   "main": "index.js",
   "scripts": {
-    "start-dev": "nodemon index.js"
+    "start-dev": "nodemon array.js"
   },
   "repository": {
     "type": "git",
