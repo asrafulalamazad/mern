@@ -1,8 +1,8 @@
-import { Districts, upazilla  } from "./Districts.js";
+import { Districts, upazilla } from "./Districts.js";
 
-Districts.map((Dist,u)=>{
-    let DistrictsProfile= `Districts Name: ${Dist.name} and Number of Upzilla : ${ Dist.upazilla}`
-    
+Districts.map((Dist) => {
+    let DistrictsProfile = `Districts Name: ${Dist.name} and Number of Upzilla : ${ Dist.upazilla}`
+
     console.log(DistrictsProfile);
 })
 
@@ -12,8 +12,8 @@ Districts.map((Dist,u)=>{
 
 console.log("======================");
 
-upazilla.map((upazilla)=>{
-    let upazillaName= `Districts Name: ${upazilla.name} and name of District: ${upazilla.Dist}`
-    
+upazilla.map((upazilla) => {
+    let upazillaName = `Districts Name: ${upazilla.name} and name of District: ${upazilla.Dist}`
+
     console.log(upazillaName);
 })
