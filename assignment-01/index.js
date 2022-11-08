@@ -1,14 +1,19 @@
 import { Districts, upazilla  } from "./Districts.js";
 
 Districts.map((Dist,u)=>{
-    let DistrictsProfile= `Districts Name: ${Dist.name}`
+    let DistrictsProfile= `Districts Name: ${Dist.name} and Number of Upzilla : ${ Dist.upazilla}`
     
     console.log(DistrictsProfile);
 })
+
+
+
+
+
 console.log("======================");
 
 upazilla.map((upazilla,u)=>{
-    let upazillaName= `Districts Name: ${upazilla.name}`
+    let upazillaName= `Districts Name: ${upazilla.name} and name of District: ${upazilla.Dist}`
     
     console.log(upazillaName);
 })

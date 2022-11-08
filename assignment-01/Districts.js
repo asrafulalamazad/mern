@@ -5,10 +5,10 @@ let Districts  =[
     {name: 'Comilla', upazilla: '18', },
     {name: 'Noakahli', upazilla: '8', },
     {name: 'Chandpur', upazilla: '7', },
-    {name: 'nator', upazilla: '54', },
-    {name: 'BBaria', upazilla: '45', },
+    {name: 'nator', upazilla: '4', },
+    {name: 'BBaria', upazilla: '5', },
     {name: 'Bogra', upazilla: '5', },
-    {name: 'Gazipur', upazilla: '56', },
+    {name: 'Gazipur', upazilla: '16', },
 ]
 
 let upazilla  =[
