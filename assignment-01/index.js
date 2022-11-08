@@ -12,7 +12,7 @@ Districts.map((Dist,u)=>{
 
 console.log("======================");
 
-upazilla.map((upazilla,u)=>{
+upazilla.map((upazilla)=>{
     let upazillaName= `Districts Name: ${upazilla.name} and name of District: ${upazilla.Dist}`
     
     console.log(upazillaName);
