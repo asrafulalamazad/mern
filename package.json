@@ -19,5 +19,6 @@
   "homepage": "https://github.com/asrafulalamazad/mern#readme",
   "dependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "devDependencies": {}
 }

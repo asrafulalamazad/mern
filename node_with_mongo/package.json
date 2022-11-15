@@ -1,5 +1,5 @@
 {
-  "name": "node_mongo",
+  "name": "node_with_mongo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
