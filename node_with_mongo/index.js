@@ -9,7 +9,9 @@ if (error){
     console.log("Database connection Failed")
 }
 else{
-    console.log("Database Connectd")
+    console.log("Database Connection Success")
+    InsertData(MyMongoClient);
+    
 }
 });
 
@@ -17,7 +19,7 @@ function InsertData(MyMongoClient){
     var myDb= MyMongoClient.db('school');
     var myCollection= myDb.collection('students');
 
-    var myData= {name:"Asaful Alam", phone: "01710430878", class: "Ten"};
+    var myData= {name:"Ahnaf Bin Asraf", phone: "01670298486", class: "One"};
 
   //  myCollection.insertOne(myData);
 
@@ -29,6 +31,4 @@ function InsertData(MyMongoClient){
             console.log('Inserted');
         }
     })
-
-
 }
