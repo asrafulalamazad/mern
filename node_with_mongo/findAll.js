@@ -14,8 +14,7 @@ else{
     //  deleteOne(MyMongoClient);
     //  deleteAll(MyMongoClient);
     // findOne(MyMongoClient);
-    // findAll(MyMongoClient);
-        findDataProjection(MyMongoClient);
+        findAll(MyMongoClient);
 }
 });
 
@@ -66,14 +65,12 @@ else{
 //         })
 //     }
 
-function findDataProjection(MyMongoClient){
+function findAll(MyMongoClient){
         var myDb= MyMongoClient.db('school');
         var myCollection = myDb.collection('students'); 
-
-    var ItemObj= {};
-    var itemProjection={projection:{name:''}};
+   
        
-        myCollection.find(ItemObj,itemProjection).toArray(function(error, result){
+        myCollection.find().toArray(function(error, result){
             console.log(result);
         })
         }
