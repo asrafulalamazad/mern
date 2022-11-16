@@ -10,10 +10,9 @@ if (error){
 }
 else{
     console.log("Database Connection Success")
-    //  InsertData(MyMongoClient);
-    //  deleteOne(MyMongoClient);
-    //  deleteAll(MyMongoClient);
-        findOne(MyMongoClient);
+    //InsertData(MyMongoClient);
+    // deleteOne(MyMongoClient);
+     deleteAll(MyMongoClient);
 }
 });
 
@@ -51,28 +50,15 @@ else{
 
 // }
 
-// function deleteAll(MyMongoClient){
-//     var myDb= MyMongoClient.db('school');
-//     var myCollection = myDb.collection('students'); 
+function deleteAll(MyMongoClient){
+    var myDb= MyMongoClient.db('school');
+    var myCollection = myDb.collection('students'); 
 
-//     myCollection.deleteMany(function(error, result){
-//             if(error){
-//                 console.log('Not Deleted');
-//             }else{
-//             console.log('Deleted Data: ',result);
-//             }
-//         })
-//     }
-
-function findOne(MyMongoClient){
-        var myDb= MyMongoClient.db('school');
-        var myCollection = myDb.collection('students'); 
-        var Search={father:'Nur Islam'}
-       
-        myCollection.findOne(Search,function(error,result){
-            console.log('Name: '+result.name);
-            console.log('Contact '+result.phone);
-            console.log('Class: '+result.class);
+    myCollection.deleteMany(function(error, result){
+            if(error){
+                console.log('Not Deleted');
+            }else{
+            console.log('Deleted Data: ',result);
+            }
         })
-
-        }
+    }

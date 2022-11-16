@@ -19,7 +19,7 @@ function InsertData(MyMongoClient){
     var myDb= MyMongoClient.db('school');
     var myCollection= myDb.collection('students');
 
-    var myData= {name:"Ahnaf Bin Asraf", phone: "01670298486", class: "One"};
+    var myData= {name:"Asraful alam", phone: "01670298486", class: "One", father:'Nur Islam'};
 
   //  myCollection.insertOne(myData);
 
