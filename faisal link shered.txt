@@ -1,0 +1,19 @@
+https://www.youtube.com/@Bogdan_Stashchuk/playlists
+https://github.com/faisal2410/node-mongo-crud
+Mongodb community server download
+https://www.mongodb.com/try/download/community
+
+Mongodb Compass download 
+
+https://www.mongodb.com/try/download/compass
+
+Mongo shell download :
+https://www.mongodb.com/try/download/shell
+
+How to install mongoimport and mongoexport
+
+https://dotnettutorials.net/lesson/how-to-install-mongoimport-and-mongoexport/
+
+Download mongodb database tools :
+https://www.mongodb.com/try/download/database-tools
+https://dotnettutorials.net/lesson/crud-operations-in-mongodb/
