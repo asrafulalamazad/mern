@@ -13,8 +13,7 @@ else{
     //  InsertData(MyMongoClient);
     //  deleteOne(MyMongoClient);
     //  deleteAll(MyMongoClient);
-    // findOne(MyMongoClient);
-        findAll(MyMongoClient);
+        findOne(MyMongoClient);
 }
 });
 
@@ -65,12 +64,15 @@ else{
 //         })
 //     }
 
-function findAll(MyMongoClient){
+function findOne(MyMongoClient){
         var myDb= MyMongoClient.db('school');
         var myCollection = myDb.collection('students'); 
-   
+        var Search={father:'Nur Islam'}
        
-        myCollection.find().toArray(function(error, result){
-            console.log(result);
+        myCollection.findOne(Search,function(error,result){
+            console.log('Name: '+result.name);
+            console.log('Contact '+result.phone);
+            console.log('Class: '+result.class);
         })
+
         }
