@@ -24,7 +24,7 @@ else{
 
 function CreateCollection(MyMongoClient){
     var myDb=MyMongoClient.db('school')
-    myDb.createCollection('teachers',function(error, result){
+    myDb.createCollection('Bangladesh',function(error, result){
        if (error){console.log('Not Create Collection');} 
        
        else {
