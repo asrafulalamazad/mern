@@ -15,22 +15,24 @@ else{
     //  deleteAll(MyMongoClient);
     // findOne(MyMongoClient);
     // findAll(MyMongoClient);
-   // findQueryLimit(MyMongoClient);
- //  findQuerybySort(MyMongoClient);
-   updateData(MyMongoClient);
+    findQuery(MyMongoClient);
 }
 });
 
-function updateData(MyMongoClient){
-    var myDb=MyMongoClient.db('school');
-    var myCollection= myDb.collection('students');
-
-    
-    var myQuery= {name:'alam'};
-    var newVales= {$set: {name: 'Asraful Alam',phone: '01710430878', dist: 'Feni' }}
+function findQuery(MyMongoClient){
+        var myDb= MyMongoClient.db('school');
+        var myCollection = myDb.collection('students'); 
 
 
-    myCollection.updateOne(myQuery,newVales, function(error,values){
-        console.log(values);
-    })
-}
+    var ItemObj= {phone: "01670298486"};
+  
+       
+        myCollection.find(ItemObj).toArray(function(error, resultobj){
+         
+
+            
+            console.log(resultobj);
+        })
+        }
+
+

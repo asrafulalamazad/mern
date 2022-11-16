@@ -15,22 +15,18 @@ else{
     //  deleteAll(MyMongoClient);
     // findOne(MyMongoClient);
     // findAll(MyMongoClient);
-   // findQueryLimit(MyMongoClient);
- //  findQuerybySort(MyMongoClient);
-   updateData(MyMongoClient);
+    findQueryLimit(MyMongoClient);
 }
 });
 
-function updateData(MyMongoClient){
-    var myDb=MyMongoClient.db('school');
-    var myCollection= myDb.collection('students');
+function findQueryLimit(MyMongoClient){
+        var myDb= MyMongoClient.db('school');
+        var myCollection = myDb.collection('students'); 
+       
+        myCollection.find().limit(3).toArray(function(error, result){
+                   
+            console.log(result);
+        })
+        }
 
-    
-    var myQuery= {name:'alam'};
-    var newVales= {$set: {name: 'Asraful Alam',phone: '01710430878', dist: 'Feni' }}
 
-
-    myCollection.updateOne(myQuery,newVales, function(error,values){
-        console.log(values);
-    })
-}

@@ -16,21 +16,20 @@ else{
     // findOne(MyMongoClient);
     // findAll(MyMongoClient);
    // findQueryLimit(MyMongoClient);
- //  findQuerybySort(MyMongoClient);
-   updateData(MyMongoClient);
+   findQuerybySort(MyMongoClient);
 }
 });
 
-function updateData(MyMongoClient){
-    var myDb=MyMongoClient.db('school');
-    var myCollection= myDb.collection('students');
+function findQuerybySort(MyMongoClient){
+        var myDb= MyMongoClient.db('school');
+        var myCollection = myDb.collection('students'); 
+       
+    var SortPattern= {phone:1}
 
-    
-    var myQuery= {name:'alam'};
-    var newVales= {$set: {name: 'Asraful Alam',phone: '01710430878', dist: 'Feni' }}
+        myCollection.find().sort(SortPattern).toArray(function(error, result){
+                   
+            console.log(result);
+        })
+        }
 
 
-    myCollection.updateOne(myQuery,newVales, function(error,values){
-        console.log(values);
-    })
-}
