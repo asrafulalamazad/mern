@@ -1,0 +1,10 @@
+var name = function (namevalue) {
+    return namevalue;
+
+}
+
+
+
+
+console.log(name);
+name('Asraful Alam');
