@@ -74,14 +74,13 @@ app.get('/dhaka', function(req, res){
 
  })
 
- app.get("/cookie",function(req, res){
+ app.get("/header",function(req, res){
 
-    res.cookie("name","Asraful")
-    res.cookie("age","65")
-    res.cookie("city","dhaka")
-  
+    res.append("f_name","Asraful")
+    res.append("l_name","alam")
+    res.append("dist","feni")
+    res.send("header request");
     res.status("201")
-    res.end("set cookie")
 
  })
 

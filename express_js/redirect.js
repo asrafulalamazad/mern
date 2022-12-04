@@ -74,17 +74,6 @@ app.get('/dhaka', function(req, res){
 
  })
 
- app.get("/cookie",function(req, res){
-
-    res.cookie("name","Asraful")
-    res.cookie("age","65")
-    res.cookie("city","dhaka")
-  
-    res.status("201")
-    res.end("set cookie")
-
- })
-
 
 
 

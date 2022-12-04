@@ -47,47 +47,6 @@ app.get('/download', function(req, res){
 
 })
 
-//redirect from
-
-app.get('/feni', function(req, res){
-
-   res.redirect("/dhaka/")
- 
-
-})
-//redirect to
-
-app.get('/dhaka', function(req, res){
-
-   res.send("dhaka, Bangladesh")
- 
- })
-
-
- app.get("/header",function(req, res){
-
-    res.append("f_name","Asraful")
-    res.append("l_name","alam")
-    res.append("dist","feni")
-    res.send("header request");
-    res.status("201")
-
- })
-
- app.get("/cookie",function(req, res){
-
-    res.cookie("name","Asraful")
-    res.cookie("age","65")
-    res.cookie("city","dhaka")
-  
-    res.status("201")
-    res.end("set cookie")
-
- })
-
-
-
-
 
 
 
