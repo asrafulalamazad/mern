@@ -1,22 +1,37 @@
 var express = require('express');
-
 var multer = require('multer');
-
 var multer = multer();
 
 
-app = express();
-app.use(multer.array())
-app.use(express.static('public'));
+var app = express();
 
 
+
+var storage = multer.diskStorage(   {
+                destination : function(req, file, callBack){
+                callBack(null, './uploads');
+            },
+            
+
+                filename: function(req, file, callBack){
+                    callBack(null, file.originalname);
+
+            }}
+    
+)
+
+var upload = multer({storage:storage}).single ('myfile');
 
 
 app.post('/', function(req, res){
 
-    var jsonData=  req.body;
-    var jsonString= JSON.stringify(jsonData);
-    res.send(jsonString)
+   upload=(req,res, function(error){
+    if(error){
+        return res.end ('failed')
+    } else{
+        res.end('Success')
+    }
+   })
 
     
 
