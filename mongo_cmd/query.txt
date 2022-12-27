@@ -1,0 +1,85 @@
+show dbs
+use schools
+show collections
+db.help()
+db.stats()
+
+create colletion with data insert
+=====================================
+db.teachers.insert({"name":"MD Mustafa", "City":"Feni"})
+
+
+database delete/drop
+==========================
+use Schools
+switched to db Schools
+-----------------------
+db.dropDatabase()
+{ ok: 1, dropped: 'Schools' }
+=================================
+
+crate collection
+
+db.createCollection('Teachers')
+
+delete collection
+ db.Teachers.drop()
+
+=================
+Insert Many
+
+db.list.insertMany([{name:"Azad", city: "Feni"},{name:"Ahnaf", city:"Dhaka"},{phone: true}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("63ab2880bedd7ac4c2752ebc"),
+    '1': ObjectId("63ab2880bedd7ac4c2752ebd"),
+    '2': ObjectId("63ab2880bedd7ac4c2752ebe")
+  }
+}
+
+
+Insert One
+db.list.insertOne({name:"Azad", city: "Feni"})
+
+
+db.list.insertOne({name:{fName:"Asraful", lName:"Alam"}, city: "Feni"})
+
+
+fine
+
+db.students.find().pretty()
+
+findONe
+
+db.students.find({city: "Dhaka"}).pretty()
+
+
+
+Projection: School> db.fuel.find({},{date:1, qty:1, _id:0})
+
+School> db.fuel.find({qyt:3.36},{date:1, qty:1, _id:0})
+
+
+query
+
+gte> db.fuel.find({taka: {$gte:1500}},{date:1,_id:0, taka:1, Date:1}).pretty()
+gt> db.fuel.find({taka: {$gte:1500}},{date:1,_id:0, taka:1, Date:1}).pretty()
+
+School> db.fuel.find({taka: {$in:[400,300]}},{date:1,_id:0, taka:1, Date:1}).pretty()
+
+
+logical
+
+School> db.fuel.find({$and:[{taka:{$lt:1000}},{qty:{$lt:4}}]},{date:1, _id: 0, taka:1, Date:1})
+
+db.fuel.find({$or:[{taka:{$lt:1000}},{qty:{$lt:0}}]},{date:1, _id: 0, taka:1, Date:1})
+
+
+
+
+
+
+
+
+
