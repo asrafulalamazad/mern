@@ -1,5 +1,6 @@
 const express= require("express");
 const helloCcontroller= require("../controllers/helloController.js")
+const studentControllers= require('../controllers/studentControllers')
 
 
 const router = express.Router();
@@ -11,7 +12,15 @@ router.get("/hello", helloCcontroller.Hello_get)
 router.post("/hello", helloCcontroller.Hello_post)
 
 
-//undefined router
+//mongoose start
+
+router.get("/insertStudent", studentControllers.insertStudent)
+
+//mongoose end
 
 
-module.exports= router;
+
+
+
+
+module.exports = router;
