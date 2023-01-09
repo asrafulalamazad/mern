@@ -1,4 +1,6 @@
-const StudentModel = require('../models/StudentModel');
+// const StudentModel = require('../models/StudentModel');
+const StudentModel = require('../models/StudentModel')
+
 
 exports.insertStudent=(req, res)=>{
 
@@ -6,16 +8,14 @@ exports.insertStudent=(req, res)=>{
 
    StudentModel.create(reqBody, (err,data)=>{
         if (err){
-            res.header(400).json({status:"400",data: err })
+            res.status(400).json({error:"invalid request",data: err })
         }
        
         else {
-        res.header(201).json({status:"400",data: data })
+        res.status(201).json({success:true , data: data });
     }
 
    })
-
-
 
 
 };

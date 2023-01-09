@@ -1,14 +1,12 @@
-const { default: mongoose } = require("mongoose");
+//const { default: mongoose } = require("mongoose");
+const mongoose= require('mongoose')
 
-
-const dataSchema= mongoose.Schema=({
+const DataSchema= mongoose.Schema=({
     name: String,
-    phone: String,
-    city: String,
-    roll: String
+    roll: String,
+    class: String,
+    remarks: String
 
-});
-
-
-const StudentModel= mongoose.model('students', dataSchema);
+})
+const StudentModel= mongoose.model('students', DataSchema);
 module.exports = StudentModel;

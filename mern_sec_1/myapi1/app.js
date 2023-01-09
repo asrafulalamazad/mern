@@ -4,6 +4,8 @@ const router = require("./src/routes/api");
 
 const app = new express();
 
+const bodyParser= require('body-parser');
+
 //security Middleware Import start
 const rateLimit = require('express-rate-limit');
 const helmet=  require('helmet');
@@ -24,6 +26,8 @@ app.use (helmet());
 app.use (mongoSanitize());
 app.use(xss());
 app.use(hpp());
+
+app.use(bodyParser.json());
 
 // request rate limt start
 
@@ -54,22 +58,12 @@ const limiter = rateLimit({
 
 
 // MongoDB Database Connection
-    // let URI = "mongodb+srv://cluster0.kxn7sfi.mongodb.net/school";
-    // let OPTION = {user:"asrafuldoc", password: "Azad20121987"};
-
-    //mongoose.connect(URI
-        // , OPTION, (error)=>{
-        // console.log("Database Connected");
-        // console.log(error)}
-      //  );
-
-
-
+    
 let URI = "mongodb://127.0.0.1:27017/School";
-let OPTION = {user:'', password: ''};
+let OPTION = {user:'', pass: ''};
 
-mongoose.connect(URI,(error)=>{
-    console.log('success');
+mongoose.connect(URI, OPTION, (error)=>{
+    console.log('Connection success');
     console.log(error);
 });
 
