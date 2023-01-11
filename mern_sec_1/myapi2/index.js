@@ -1,16 +1,11 @@
-const express= require('express');
-
-app= express();
+const app = require("./app");
 
 
-app.get("/asraful",function(req,res){
-    
-    res.send("ASRAFUL ALAM")
+app.listen(80);
 
+
+//undefined router start
+app.use("*", (req,res)=>{
+    res.status(404).json({"status": "Failed", "data":"Not found"})
 })
-
-
-
-app.listen(8000, function(){
-    console.log("server run")
-})
+//undefined router end

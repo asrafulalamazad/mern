@@ -13,10 +13,7 @@ const mongoSanitize= require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp= require('hpp');
 const cors= require('cors');
-const mongoose = require('mongoose');
-//const { default: mongoose } = require("mongoose");
-
-
+const { default: mongoose } = require("mongoose");
 //security Middleware Import end
 
 //security Middleware Implement start
@@ -58,14 +55,17 @@ const limiter = rateLimit({
 
 
 // MongoDB Database Connection
-    
-let URI = "mongodb://127.0.0.1:27017/School";
-let OPTION = {user:'', pass: ''};
+    // let URI = "mongodb+srv://cluster0.kxn7sfi.mongodb.net/school";
+    // let OPTION = {user:"asrafuldoc", password: "Azad20121987"};
 
-mongoose.connect(URI, OPTION, (error)=>{
-    console.log('Connection success');
-    console.log(error);
-});
+let URI = "mongodb://127.0.0.1:27017/School";
+let OPTION = {user:'', password: ''};
+
+mongoose.connect(URI
+    // , OPTION, (error)=>{
+    // console.log("Database Connected");
+    // console.log(error)}
+    );
 
 
 //MongoDB Database end

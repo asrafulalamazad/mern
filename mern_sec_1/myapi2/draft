@@ -1,0 +1,27 @@
+
+const app =  express();
+const router = require("./src/routes/api");
+
+app.use("/api/v2", router)
+
+
+app.listen(80);
+
+// const express= require("express");
+// const Router= require("./src/routes/api");
+// const app = new express();
+
+
+// app.use("/api/v2",Router);
+
+
+// //undefined router start
+// app.use("*", (req,res)=>{
+//     res.status(404).json({"status": "Failed", "data":"Not found"})
+// })
+// //undefined router end
+
+
+
+
+// module.exports = app;
