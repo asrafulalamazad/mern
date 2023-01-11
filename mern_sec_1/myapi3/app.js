@@ -1,6 +1,7 @@
 const express = require('express');
 const router = require('./src/router/api')
 const app= new express();
+const mongoose=require('mongoose')
 
 
 
@@ -12,6 +13,8 @@ const mongoSanitize= require('express-mongo-sanitize');
 const xss= require('xss-clean');
 const hpp= require('hpp');
 const cors = require('cors');
+const bodyParser =require('body-parser');
+
 
 
 //sec_middleware implements
@@ -20,6 +23,7 @@ app.use(hpp());
 app.use(mongoSanitize());
 app.use(xss());
 app.use(helmet());
+app.use(bodyParser.json());
 
 // request rate limit start
 
@@ -32,6 +36,22 @@ const limiter = rateLimit(
 
 app.use(limiter)
 // request rate limit end
+
+
+//database Conncection start
+
+    let URI= "mongodb://localhost:27017/School";
+    let OPTION = {user: "", pass: "" }
+
+    mongoose.connect(URI,OPTION, (error)=>{
+        console.log('connected');
+        console.log(error);
+
+
+    })
+
+//database Conncection end
+
 
 
 // router start
