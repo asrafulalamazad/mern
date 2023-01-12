@@ -40,15 +40,34 @@ app.use(limiter)
 
 //database Conncection start
 
-    let URI= "mongodb://localhost:27017/School";
-    let OPTION = {user: "", pass: "" }
 
-    mongoose.connect(URI,OPTION, (error)=>{
-        console.log('connected');
-        console.log(error);
+// getting-started.js
 
 
-    })
+main().catch(err => console.log(err));
+
+async function main() {
+  await mongoose.connect('mongodb://127.0.0.1:27017/School');
+  
+  // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
+}
+
+
+
+    // let URI= "mongodb://localhost:27017/School";
+    // let OPTION = {user: "", pass: "" }
+
+
+    
+
+    // mongoose.connect(URI);
+
+    // // mongoose.connect(URI,OPTION, (error)=>{
+    // //     console.log('connected');
+    // //     console.log(error);
+
+
+    // // })
 
 //database Conncection end
 

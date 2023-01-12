@@ -1,11 +1,10 @@
-const StudentsModel =require('../model/studentsModel');
-
+const StudentsModel = require('../model/studentsModel')
 
  exports.insertStudent = (req,res)=>{
     
     let reqBody= req.body;
     
-    StudentsModel.create(reqBody, (err,data)=>{
+    studentModel.create(reqBody, (err,data)=>{
         if (err){
             res.status(400).json({"status":"failed", "data":err})
         }
@@ -15,6 +14,3 @@ const StudentsModel =require('../model/studentsModel');
             }
     })
 }
-
-
-
