@@ -13,7 +13,7 @@ const mongoSanitize= require('express-mongo-sanitize');
 const xss= require('xss-clean');
 const hpp= require('hpp');
 const cors = require('cors');
-const bodyParser =require('body-parser');
+const BodyParser =require('body-parser');
 
 
 
@@ -23,7 +23,7 @@ app.use(hpp());
 app.use(mongoSanitize());
 app.use(xss());
 app.use(helmet());
-app.use(bodyParser.json());
+app.use(BodyParser.json());
 
 // request rate limit start
 

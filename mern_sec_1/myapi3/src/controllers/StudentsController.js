@@ -4,13 +4,13 @@ const StudentsModel = require('../model/studentsModel')
     
     let reqBody= req.body;
     
-    studentModel.create(reqBody, (err,data)=>{
+    StudentsModel.create(reqBody, (err,data)=>{
         if (err){
             res.status(400).json({"status":"failed", "data":err})
         }
                 else
             {
-                res.status(400).json({"status":"failed", "data":data})
+                res.status(200).json({"status":"success", "data":data})
             }
     })
 }

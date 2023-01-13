@@ -10,7 +10,7 @@ router.get('/welcome',helloController.hello);
 
 //mongoose
 
-router.get("/insertStudent", StudentsController.insertStudent);
+router.post("/insertStudent", StudentsController.insertStudent);
 
 //mongoose
 
