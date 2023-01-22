@@ -9,8 +9,10 @@ router.get('/welcome',helloController.hello);
 //router.get("/hello", helloCcontroller.Hello_get)
 
 //mongoose
-
+    //create data
 router.post("/insertStudent", StudentsController.insertStudent);
+    //read data
+router.get("/readStudent", StudentsController.readStudent);
 
 //mongoose
 
