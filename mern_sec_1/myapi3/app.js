@@ -33,55 +33,25 @@ const limiter = rateLimit(
         max: 100 // 100 request per minite each ip address
     }
 )
-
 app.use(limiter)
 // request rate limit end
 
 
 //database Conncection start
-
-
-// getting-started.js
-
-
-// main().catch(err => console.log(err));
-
-// async function main() {
-//   await mongoose.connect('mongodb://127.0.0.1:27017/School');
-  
-//   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
-// }
-mongoose.connect("mongodb://127.0.0.1:27017/School",{
+mongoose.connect("mongodb://127.0.0.1:27017/Schools",{
 	useNewUrlParser:true,useUnifiedtopology:true
-},(err)=>{
-	if(err){
-		console.log(err)
-	}
-	else{
-		console.log("Database Connected @8080 port")
+    },(err)=>{
+	    if(err){
+		    console.log(err)
+	    }
+	    else{
+		    console.log("Database Connected @8080 port")
 	}
 
 })
 
 
-    // let URI= "mongodb://localhost:27017/School";
-    // let OPTION = {user: "", pass: "" }
-
-
-    
-
-    // mongoose.connect(URI);
-
-    // // mongoose.connect(URI,OPTION, (error)=>{
-    // //     console.log('connected');
-    // //     console.log(error);
-
-
-    // // })
-
 //database Conncection end
-
-
 
 // router start
 

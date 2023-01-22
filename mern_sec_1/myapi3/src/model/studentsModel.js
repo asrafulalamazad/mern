@@ -6,5 +6,5 @@ const Schema =  mongoose.Schema({
     Remarks: String
 })
 
-const studentModel = mongoose.model('schools',Schema);
+const studentModel = mongoose.model('students',Schema);
 module.exports= studentModel;
