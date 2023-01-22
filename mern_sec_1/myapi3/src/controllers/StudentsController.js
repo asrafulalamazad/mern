@@ -53,3 +53,22 @@ exports.updateStudent = (req,res)=>{
         }
 })
 }
+
+exports.deleteStudent = (req,res)=>{
+
+    let id= req.params.id;
+    let Query = {_id:id}
+
+
+    StudentsModel.remove(Query, (err,data)=>{
+    if (err){
+        res.status(400).json({"status":"failed", "data":err})
+    }
+            else
+        {
+            res.status(201).json({"status":"update success", "data":data})
+        }
+})
+}
+
+

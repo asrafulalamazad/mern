@@ -15,6 +15,8 @@ router.post("/insertStudent", StudentsController.insertStudent);
 router.get("/readStudent", StudentsController.readStudent);
     //read data
 router.post("/updateStudent/:id", StudentsController.updateStudent);
+    //delete data
+router.post("/deleteStudent/:id", StudentsController.deleteStudent);
 
 //mongoose
 
