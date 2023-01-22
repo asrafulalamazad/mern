@@ -41,13 +41,26 @@ app.use(limiter);
 
 
 //mongo db Conncetion
-let URI = "127.0.0.1:27017/Todo";
-let OPTION = {user : "", pass: ""}
+// let URI = "mongodb://127.0.0.1:27017/Todo";
+// let OPTION = {user : "", pass: ""}
 
-mongoose.connect(URI, OPTION, (error)=>{
-    console.log("Connection Success");
-    console.log(error);
-});
+// mongoose.connect(URI, OPTION, (error)=>{
+//     console.log("Connection Success");
+//     console.log(error);
+// });
+
+mongoose.connect("mongodb://127.0.0.1:27017/Todo",{
+	useNewUrlParser:true,useUnifiedtopology:true
+},(err)=>{
+	if(err){
+		console.log(err)
+	}
+	else{
+		console.log("Database Connected @5000 port")
+	}
+
+})
+
 
 //Router Implement
 //app.use("/api/v1", router);
