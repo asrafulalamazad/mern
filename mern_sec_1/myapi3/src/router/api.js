@@ -13,6 +13,8 @@ router.get('/welcome',helloController.hello);
 router.post("/insertStudent", StudentsController.insertStudent);
     //read data
 router.get("/readStudent", StudentsController.readStudent);
+    //read data
+router.post("/updateStudent/:id", StudentsController.updateStudent);
 
 //mongoose
 
