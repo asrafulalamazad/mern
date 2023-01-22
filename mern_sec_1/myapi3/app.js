@@ -44,14 +44,24 @@ app.use(limiter)
 // getting-started.js
 
 
-main().catch(err => console.log(err));
+// main().catch(err => console.log(err));
 
-async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/School');
+// async function main() {
+//   await mongoose.connect('mongodb://127.0.0.1:27017/School');
   
-  // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
-}
+//   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
+// }
+mongoose.connect("mongodb://127.0.0.1:27017/School",{
+	useNewUrlParser:true,useUnifiedtopology:true
+},(err)=>{
+	if(err){
+		console.log(err)
+	}
+	else{
+		console.log("Database Connected @8080 port")
+	}
 
+})
 
 
     // let URI= "mongodb://localhost:27017/School";
