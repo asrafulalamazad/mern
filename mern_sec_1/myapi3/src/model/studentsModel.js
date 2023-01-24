@@ -20,14 +20,10 @@ const Schema =  mongoose.Schema({
     Phone:{
         type:String,
             validate:{
-                validator: function(v){
-                    if(v.length ===11 ){
-                        return true
-                    }else{
-                        return false
-                    }
+                validator: function(phone){
+                   return /(^(\+88|0088)?(01){1}[3456789]{1}(\d){8})$/.test(phone)
                 },
-                message:"provide 11 digit phone number"
+                message:"Invalid Bangladeshi Phone No"
                 },
             },
     Class: {type:String},
