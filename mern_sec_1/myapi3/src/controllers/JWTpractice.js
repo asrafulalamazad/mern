@@ -4,7 +4,7 @@ exports.createToken= (req,res)=>{
 
     var payload = {
 
-        exp: Math.floor(Date.now()/1000)+(60*6),
+        exp: Math.floor(Date.now()/1000)+(60*60), // one hour time
         data: {Name:"Azad", City: "Feni", admin: true}
 
     }
