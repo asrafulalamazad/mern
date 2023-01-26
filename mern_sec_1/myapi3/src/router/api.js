@@ -1,7 +1,11 @@
 const express = require('express');
 const helloController= require('../controllers/helloController');
 const StudentsController= require('../controllers/StudentsController');
+
+const tokenIssueController = require("../controllers/tokenIssueController")
+
 const JWTpractice= require('../controllers/JWTpractice');
+const tokenVarifyController =require("../middleware/tokenVarifyMiddleware")
 
 const router = express.Router();
 
@@ -9,20 +13,25 @@ const router = express.Router();
 router.get('/welcome',helloController.hello);
 //router.get("/hello", helloCcontroller.Hello_get)
 
+
+// Apply Jwt
 //mongoose start
+    //create token
+router.post("/createToken",tokenIssueController.tokenIssueController );
+
     //create data
-router.post("/insertStudent", StudentsController.insertStudent);
+router.post("/insertStudent", tokenVarifyController,StudentsController.insertStudent);
     //read data
-router.get("/readStudent", StudentsController.readStudent);
+router.get("/readStudent",tokenVarifyController, StudentsController.readStudent);
     //read data
-router.post("/updateStudent/:id", StudentsController.updateStudent);
+router.post("/updateStudent/:id",tokenVarifyController, StudentsController.updateStudent);
     //delete data
-router.post("/deleteStudent/:id", StudentsController.deleteStudent);
+router.post("/deleteStudent/:id", tokenVarifyController, StudentsController.deleteStudent);
 
 //mongoose end
 
 
-//JWT start
+//JWT start Practise
 // create Token
 router.post("/createToken", JWTpractice.createToken);
 
