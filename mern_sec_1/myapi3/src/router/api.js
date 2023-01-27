@@ -14,10 +14,10 @@ router.get('/welcome',helloController.hello);
 //router.get("/hello", helloCcontroller.Hello_get)
 
 
-// Apply Jwt
+// Apply Jwt 
 //mongoose start
     //create token
-router.post("/createToken",tokenIssueController.tokenIssueController );
+router.post("/createToken",tokenIssueController.tokenIssue );
 
     //create data
 router.post("/insertStudent", tokenVarifyController,StudentsController.insertStudent);

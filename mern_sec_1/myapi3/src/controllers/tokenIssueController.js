@@ -1,8 +1,7 @@
 var jwt= require("jsonwebtoken");
 
 
-
-module.tokenIssue=  (req,res)=>{
+exports.tokenIssue=  (req,res)=>{
 
     var payload = {
 
