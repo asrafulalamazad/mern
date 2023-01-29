@@ -1,0 +1,14 @@
+
+/* div {
+    background-color: var(--bs-info);
+  border-color: black;
+    height:100px;
+} */
+
+
+.child {
+border:5px solid var(--bs-red);
+height: 100px;
+margin-bottom: 10px;
+text-align: center;
+font-weight: bold;}
