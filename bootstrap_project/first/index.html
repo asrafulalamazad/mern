@@ -5,141 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
 
-    <!-- alert -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12 m-auto">
-            <div class="alert  alert-info">
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                <p >Lorem <a class="alert-link" href="ipsum">ipsum</a> dolor sit amet, consectetur adipisicing elit. Laborum, incidunt.</p>    
-                
-            </div>    
-         </div>
+<div class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="" alt=""><img src="logo/logo.png" alt="LOGO" width="70px">ASRAFUL ALAM AZAD </a>
+
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_manu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="main_manu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dropdown Manu</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown Manu</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown Manu</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown Manu</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown Manu</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown Manu</a></li>
+                        </ul>
+                    </li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 
 
-
-    <!-- Accordion -->
-    <!-- <div class="accordion"> -->
-        <!-- <div class="accordion-item">
-            <h2 class="accordion-button" data-bs-target="#childOne" data-bs-toggle="collapse">Reports</h2>
-            <div id="childOne" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                   <ol>
-                       <li>Bangladesh</li>
-                       <li>Bangladesh</li>
-                       <li>Bangladesh</li>
-                       <li>Bangladesh</li>
-                       <li>Bangladesh</li>
-                       <li>Bangladesh</li>
-                       <li>Bangladesh</li>
-                       <li>Bangladesh</li>
-                       <li>Bangladesh</li>
-                       <li>Bangladesh</li>
-                       <li>Bangladesh</li>
-                   </ol>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <div class="accordion">
-        <div class="accordion-item">
-            <h2 class="accordion-button" data-bs-target="#child2" data-bs-toggle="collapse">Table</h2>
-            <div id="child2" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                      <!-- table  -->
-<div class="table-responsive">
-    <table class="table table-light table-striped-columns table-hover table-bordered border-dark">
-        <!-- <table class="table table-warning table-hover table-bordered border-dark"> -->
-            <thead class="table-primary">
-                <tr>
-                    <th>Seril</th>
-                    <th>Name</th>
-                    <th>City</th>
-                    <th>Phone</th>
-                    <th>Phone</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="table-active">
-                    <td>01</td>
-                    <td>asrasdfgsdfgful</td>
-                    <td>Fesdfgsdfgsdfgni</td>
-                    <td>01281ssfgsdfgsdfgsfsdgsdfgsdfgsdfg9279sfg17</td>
-                    <td>no csdfgsdfgsdfgomment</td>
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>asraful</td>
-                    <td>Feni</td>
-                    <td>01281927917</td>
-                    <td>no comment</td>
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>asraful</td>
-                    <td>Feni</td>
-                    <td>01281927917</td>
-                    <td>no comment</td>
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>asraful</td>
-                    <td>Feni</td>
-                    <td>01281927917</td>
-                    <td>no comment</td>
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>asraful</td>
-                    <td>Feni</td>
-                    <td>01281927917</td>
-                    <td>no comment</td>
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>asraful</td>
-                    <td>Feni</td>
-                    <td>01281927917</td>
-                    <td>no comment</td>
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>asraful</td>
-                    <td>Feni</td>
-                    <td>01281927917</td>
-                    <td>no comment</td>
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>asraful</td>
-                    <td>Feni</td>
-                    <td>01281927917</td>
-                    <td>no comment</td>
-                </tr>
-            </tbody>
-            <tfoot class="table-warning">
-                <td>Footer</td>
-                <td>Footer</td>
-                <td>Footer</td>
-                <td>Footer</td>
-                <td>Footer</td>
-            </tfoot>
-        </table>
-</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
- 
+<div class="container justify-content-around">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi in fugit tenetur optio doloremque blanditiis ab cupiditate sunt quo culpa? Magnam voluptate consequatur fugit veritatis quaerat, cupiditate placeat accusamus minima pariatur, odio, nostrum cum quas. Necessitatibus ut perspiciatis eum blanditiis dolore et molestiae corrupti ipsam aliquam hic sequi, praesentium vitae magni voluptatibus rem! Maiores, exercitationem porro! Soluta laboriosam, corrupti consequatur obcaecati accusantium deleniti minima fugit veniam provident animi aperiam tempora est. Maiores voluptatum facere voluptate consequatur autem. Fugiat tempore eius facere sed saepe. Rem impedit nobis, commodi quisquam error fugit doloremque modi fuga ipsum eveniet quidem quis molestiae temporibus esse.</div>
 
 
 
@@ -152,6 +56,7 @@
 
 
 
+<!-- bootstrap js-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>
