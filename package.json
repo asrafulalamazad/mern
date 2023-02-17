@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/asrafulalamazad/mern#readme",
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "nodemon": "^2.0.20"
-  },
-  "devDependencies": {}
+  }
 }
