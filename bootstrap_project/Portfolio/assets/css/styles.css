@@ -1,0 +1,15 @@
+.banner {
+  padding: 2em 1em;
+  text-align: center;
+  background: var(--bs-blue);
+  border-radius: 1em;
+}
+
+.project {
+  --bs-gutter-y: 1.5em;
+}
+
+footer {
+  background: var(--bs-gray-700);
+}
+
