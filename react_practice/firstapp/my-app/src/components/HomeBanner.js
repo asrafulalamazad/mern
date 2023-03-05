@@ -7,7 +7,7 @@ const HomeBanner = () => {
 
     useEffect(()=>{
 
-    //     api calling
+        //     api calling
         axios.get("https://jsonplaceholder.typicode.com/todos/").then((res)=>{
             setTodo(res.data)
         })
@@ -17,9 +17,23 @@ const HomeBanner = () => {
 
     },[])
 
+
+    const myList=Todo.map((list,i)=>{
+        return(
+            <tr>
+                <td>{list["userID"]}</td>
+                <td>{list["id"]}</td>
+                <td>{list["title"]}</td>
+            </tr>
+        );
+
+    })
+
     return (
         <div>
-
+            <table>
+                {myList}
+            </table>
         </div>
     );
 };
