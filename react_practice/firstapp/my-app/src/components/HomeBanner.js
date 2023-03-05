@@ -1,37 +1,65 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
 
 const HomeBanner = () => {
 
-    const [color, setColor]=useState("pink")
+    const [Todo, setTodo]=useState("Data loading");
+
+    useEffect(()=>{
+
+    //     api calling
+        axios.get("https://jsonplaceholder.typicode.com/todos/").then((res)=>{
+            setTodo(res.data)
+        })
+
+            .catch((err)=>{});
 
 
-   if(color==="red"){
-       return (
-           <div>
-               <h1 style={{color:"red"}}> Color is Red</h1>
-           </div>
-       );
-   }
-   else if (color==="pink"){
-       return (
-           <div>
-               <h1 style={{color:"orange"}}> Color is Red</h1>
-           </div>
-       );
-   }
-   else {
-       return (
-           <div>
-               <h1 style={{color:"gray"}}> Color is Red</h1>
-           </div>
-       );
-   }
+    },[])
 
+    return (
+        <div>
+
+        </div>
+    );
 };
 
 export default HomeBanner;
 
-
+// import React, {useState} from 'react';
+//
+// const HomeBanner = () => {
+//
+//     const [color, setColor]=useState("pink")
+//
+//
+//    if(color==="red"){
+//        return (
+//            <div>
+//                <h1 style={{color:"red"}}> Color is Red</h1>
+//            </div>
+//        );
+//    }
+//    else if (color==="pink"){
+//        return (
+//            <div>
+//                <h1 style={{color:"orange"}}> Color is Red</h1>
+//            </div>
+//        );
+//    }
+//    else {
+//        return (
+//            <div>
+//                <h1 style={{color:"gray"}}> Color is Red</h1>
+//            </div>
+//        );
+//    }
+//
+// };
+//
+// export default HomeBanner;
+//
+//
 
 
 
