@@ -1,37 +1,32 @@
-import React, {useEffect, useState} from 'react';
-import axios from "axios";
+import React, {useState} from 'react';
 
 const HomeBanner = () => {
 
-        const [todo, setTodo]= useState("Please Wait")
+    const [color, setColor]=useState("pink")
 
 
-    useEffect(()=>{
+   if(color==="red"){
+       return (
+           <div>
+               <h1 style={{color:"red"}}> Color is Red</h1>
+           </div>
+       );
+   }
+   else if (color==="pink"){
+       return (
+           <div>
+               <h1 style={{color:"orange"}}> Color is Red</h1>
+           </div>
+       );
+   }
+   else {
+       return (
+           <div>
+               <h1 style={{color:"gray"}}> Color is Red</h1>
+           </div>
+       );
+   }
 
-        // api calling
-        axios.get("https://jsonplaceholder.typicode.com/todos/")
-            .then((res)=>{
-                setTimeout(
-                    ()=>{                setTodo(res.data)
-                    },3000
-                )
-
-                // alert(res.status);
-                // alert(res.data);
-            })
-            .catch((error)=>{
-            })
-
-        //alert("Welcome")
-
-    })
-
-
-    return (
-        <div>
-            {JSON.stringify(todo)}
-        </div>
-    );
 };
 
 export default HomeBanner;
@@ -40,7 +35,43 @@ export default HomeBanner;
 
 
 
-
+// import React, {useEffect, useState} from 'react';
+// import axios from "axios";
+//
+// const HomeBanner = () => {
+//
+//     const [todo, setTodo]= useState("Please Wait")
+//
+//
+//     useEffect(()=>{
+//
+//         // api calling
+//         axios.get("https://jsonplaceholder.typicode.com/todos/")
+//             .then((res)=>{
+//                 setTimeout(
+//                     ()=>{                setTodo(res.data)
+//                     },3000
+//                 )
+//
+//                 // alert(res.status);
+//                 // alert(res.data);
+//             })
+//             .catch((error)=>{
+//             })
+//
+//         //alert("Welcome")
+//
+//     })
+//
+//
+//     return (
+//         <div>
+//             {JSON.stringify(todo)}
+//         </div>
+//     );
+// };
+//
+// export default HomeBanner;
 
 
 
