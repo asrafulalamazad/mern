@@ -2,43 +2,99 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 
 const HomeBanner = () => {
-
-    const [Todo, setTodo]=useState("Data loading");
+    const [Todo, setTodo]=useState([]);
 
     useEffect(()=>{
-
-        //     api calling
-        axios.get("https://jsonplaceholder.typicode.com/todos/").then((res)=>{
-            setTodo(res.data)
-        })
-
+        axios.get("https://jsonplaceholder.typicode.com/todos/")
+            .then((res)=>{setTodo(res.data)})
             .catch((err)=>{});
-
-
     },[])
-
-
-    const myList=Todo.map((list,i)=>{
+    const myTodo= Todo.map((list,i)=>{
         return(
+
             <tr>
                 <td>{list["userID"]}</td>
                 <td>{list["id"]}</td>
                 <td>{list["title"]}</td>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Delete</th>
             </tr>
-        );
+        )
+
 
     })
-
     return (
         <div>
-            <table>
-                {myList}
+            <p className="h1 align-content-center">Todo List </p>
+            <table className="table table-bordered table-striped-columns">
+               <thead>
+                    <th>User ID</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>View</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+               </thead>
+
+                {myTodo}
             </table>
         </div>
     );
 };
 
 export default HomeBanner;
+
+
+
+// import React, {useEffect, useState} from 'react';
+// import axios from "axios";
+//
+// const HomeBanner = () => {
+//
+//     const [Todo, setTodo]=useState("Data loading");
+//
+//     useEffect(()=>{
+//
+//         //     api calling
+//         axios.get("https://jsonplaceholder.typicode.com/todos/").then((res)=>{
+//             setTodo(res.data)
+//         })
+//
+//             .catch((err)=>{});
+//
+//
+//     },[])
+//
+//
+//     const myList=Todo.map((list,i)=>{
+//         return(
+//             <tr>
+//                 <td>{list["userID"]}</td>
+//                 <td>{list["id"]}</td>
+//                 <td>{list["title"]}</td>
+//             </tr>
+//         );
+//
+//     })
+//
+//     return (
+//         <div>
+//             {/*<table>*/}
+//             {/*    {myList}*/}
+//             {/*</table>*/}
+//             <h1>Bangladesh</h1>
+//         </div>
+//     );
+// };
+//
+// export default HomeBanner;
+
+
+
+
+
+
 
 // import React, {useState} from 'react';
 //
