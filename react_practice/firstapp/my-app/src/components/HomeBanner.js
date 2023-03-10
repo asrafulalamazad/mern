@@ -9,6 +9,26 @@ const HomeBanner = () => {
             .then((res)=>{setTodo(res.data)})
             .catch((err)=>{});
     },[])
+
+    const DeleteEvent=(id)=>{
+        let DeleteID= "Delete ID"+ id;
+        alert(DeleteID)
+
+    }
+    const ViewEvent=(id)=>{
+        let ViewID= "view ID"+ id;
+        alert(ViewID)
+
+    }
+    const EditEvent=(id)=>{
+        let EditID= "Edit ID"+ id;
+        alert(EditID)
+
+    }
+
+
+
+
     const myTodo= Todo.map((list,i)=>{
         return(
 
@@ -16,9 +36,9 @@ const HomeBanner = () => {
                 <td>{list["userID"]}</td>
                 <td>{list["id"]}</td>
                 <td>{list["title"]}</td>
-                <th>View</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <td className="btn btn-info" onClick={ViewEvent.bind(this,list["id"])}>View</td>
+                <td className="btn btn-success" onClick={EditEvent.bind(this,list["id"])}>Edit</td>
+                <td className="btn btn-danger" onClick={DeleteEvent.bind(this,list["id"])}>Delete</td>
             </tr>
         )
 
@@ -27,14 +47,14 @@ const HomeBanner = () => {
     return (
         <div>
             <p className="h1 align-content-center">Todo List </p>
-            <table className="table table-bordered table-striped-columns">
+            <table className="table table-bordered ">
                <thead>
                     <th>User ID</th>
                     <th>ID</th>
                     <th>Title</th>
-                    <th>View</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <td className="btn btn-info">View</td>
+                    <td className="btn btn-success">Edit</td>
+                    <td className="btn btn-danger">Delete</td>
                </thead>
 
                 {myTodo}
