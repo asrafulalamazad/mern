@@ -1,69 +1,126 @@
-import React, {useEffect, useState} from 'react';
-import axios from "axios";
+import React, {Component} from 'react';
 
-const HomeBanner = () => {
-    const [Todo, setTodo]=useState([]);
+class HomeBanner extends Component {
+    constructor() {
+        super();
 
-    useEffect(()=>{
-        axios.get("https://jsonplaceholder.typicode.com/todos/")
-            .then((res)=>{setTodo(res.data)})
-            .catch((err)=>{});
-    },[])
+        this.state={
+            color: "green"
 
-    const DeleteEvent=(id)=>{
-        let DeleteID= "Delete ID"+ id;
-        alert(DeleteID)
+        }
+
 
     }
-    const ViewEvent=(id)=>{
-        let ViewID= "view ID"+ id;
-        alert(ViewID)
+    render() {
+
+       if (this.state.color==="red"){
+           return (
+               <div>
+                   <button className="btn btn-danger" >{this.state.color}</button>
+                   {/*<button className="btn btn-danger" onClick={()=>{this.setState({color:"Blue"})}}>Blue</button>*/}
+
+
+
+                   {/*<p className="h1">{this.props.title}{this.props.subtitle}</p>*/}
+                   {/*<p className="h3">Name: {this.props.info.name}, City: {this.props.info.city}</p>*/}
+               </div>
+           );
+
+       } else if (this.state.color==="green"){
+           return (
+               <div>
+                   <button className="btn btn-success" >{this.state.color}</button>
+                   {/*<p className="h2" align="center" >State: {this.state.color}</p>*/}
+                   {/*<button className="btn btn-success" onClick={()=>{this.setState({color:"green"})}}>Blue</button>*/}
+
+
+
+                   {/*<p className="h1">{this.props.title}{this.props.subtitle}</p>*/}
+                   {/*<p className="h3">Name: {this.props.info.name}, City: {this.props.info.city}</p> {/*<p className="h2" align="center" >State: {this.state.color}</p>*/}
+                   {/*<button className="btn btn-success" onClick={()=>{this.setState({color:"green"})}}>Blue</button>*/}
+
+
+
+                   {/*<p className="h1">{this.props.title}{this.props.subtitle}</p>*/}
+                   {/*<p className="h3">Name: {this.props.info.name}, City: {this.props.info.city}</p>*/}
+               </div>
+           );
+       }
+    
+
 
     }
-    const EditEvent=(id)=>{
-        let EditID= "Edit ID"+ id;
-        alert(EditID)
-
-    }
-
-
-
-
-    const myTodo= Todo.map((list,i)=>{
-        return(
-
-            <tr>
-                <td>{list["userID"]}</td>
-                <td>{list["id"]}</td>
-                <td>{list["title"]}</td>
-                <td className="btn btn-info" onClick={ViewEvent.bind(this,list["id"])}>View</td>
-                <td className="btn btn-success" onClick={EditEvent.bind(this,list["id"])}>Edit</td>
-                <td className="btn btn-danger" onClick={DeleteEvent.bind(this,list["id"])}>Delete</td>
-            </tr>
-        )
-
-
-    })
-    return (
-        <div>
-            <p className="h1 align-content-center">Todo List </p>
-            <table className="table table-bordered ">
-               <thead>
-                    <th>User ID</th>
-                    <th>ID</th>
-                    <th>Title</th>
-                    <td className="btn btn-info">View</td>
-                    <td className="btn btn-success">Edit</td>
-                    <td className="btn btn-danger">Delete</td>
-               </thead>
-
-                {myTodo}
-            </table>
-        </div>
-    );
-};
+}
 
 export default HomeBanner;
+//
+//
+// import React, {useEffect, useState} from 'react';
+// import axios from "axios";
+//
+// const HomeBanner = () => {
+//     const [Todo, setTodo]=useState([]);
+//
+//     useEffect(()=>{
+//         axios.get("https://jsonplaceholder.typicode.com/todos/")
+//             .then((res)=>{setTodo(res.data)})
+//             .catch((err)=>{});
+//     },[])
+//
+//     const DeleteEvent=(id)=>{
+//         let DeleteID= "Delete ID"+ id;
+//         alert(DeleteID)
+//
+//     }
+//     const ViewEvent=(id)=>{
+//         let ViewID= "view ID"+ id;
+//         alert(ViewID)
+//
+//     }
+//     const EditEvent=(id)=>{
+//         let EditID= "Edit ID"+ id;
+//         alert(EditID)
+//
+//     }
+//
+//
+//
+//
+//     const myTodo= Todo.map((list,i)=>{
+//         return(
+//
+//             <tr>
+//                 <td>{list["userID"]}</td>
+//                 <td>{list["id"]}</td>
+//                 <td>{list["title"]}</td>
+//                 <td className="btn btn-info" onClick={ViewEvent.bind(this,list["id"])}>View</td>
+//                 <td className="btn btn-success" onClick={EditEvent.bind(this,list["id"])}>Edit</td>
+//                 <td className="btn btn-danger" onClick={DeleteEvent.bind(this,list["id"])}>Delete</td>
+//             </tr>
+//         )
+//
+//
+//     })
+//     return (
+//         <div>
+//             <p className="h1 align-content-center">Todo List </p>
+//             <table className="table table-bordered ">
+//                <thead>
+//                     <th>User ID</th>
+//                     <th>ID</th>
+//                     <th>Title</th>
+//                     <td className="btn btn-info">View</td>
+//                     <td className="btn btn-success">Edit</td>
+//                     <td className="btn btn-danger">Delete</td>
+//                </thead>
+//
+//                 {myTodo}
+//             </table>
+//         </div>
+//     );
+// };
+//
+// export default HomeBanner;
 
 
 

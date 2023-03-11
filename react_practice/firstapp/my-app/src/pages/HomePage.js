@@ -2,10 +2,14 @@ import React, {Component} from 'react';
 import HomeBanner from "../components/HomeBanner";
 
 class HomePage extends Component {
+    constructor() {
+        super();
+    }
+
     render() {
         return (
             <div>
-                <HomeBanner title= "Home Page" subtitle= "Welcome to my website" info={{name:'Asraful Alam', city: 'Feni'} }/>
+                <HomeBanner title= "Welcome" subtitle= " to my website" info={{name:'Asraful Alam', city: 'Feni'} }/>
             </div>
         );
     }
