@@ -1,58 +1,83 @@
 import React, {Component} from 'react';
 
 class HomeBanner extends Component {
-    constructor() {
-        super();
 
-        this.state={
-            color: "green"
+    myClick=()=>{
+        let myValue=this.myText.value;
 
-        }
-
-
+        alert(myValue)
     }
     render() {
 
-       if (this.state.color==="red"){
-           return (
-               <div>
-                   <button className="btn btn-danger" >{this.state.color}</button>
-                   {/*<button className="btn btn-danger" onClick={()=>{this.setState({color:"Blue"})}}>Blue</button>*/}
-
-
-
-                   {/*<p className="h1">{this.props.title}{this.props.subtitle}</p>*/}
-                   {/*<p className="h3">Name: {this.props.info.name}, City: {this.props.info.city}</p>*/}
-               </div>
-           );
-
-       } else if (this.state.color==="green"){
-           return (
-               <div>
-                   <button className="btn btn-success" >{this.state.color}</button>
-                   {/*<p className="h2" align="center" >State: {this.state.color}</p>*/}
-                   {/*<button className="btn btn-success" onClick={()=>{this.setState({color:"green"})}}>Blue</button>*/}
-
-
-
-                   {/*<p className="h1">{this.props.title}{this.props.subtitle}</p>*/}
-                   {/*<p className="h3">Name: {this.props.info.name}, City: {this.props.info.city}</p> {/*<p className="h2" align="center" >State: {this.state.color}</p>*/}
-                   {/*<button className="btn btn-success" onClick={()=>{this.setState({color:"green"})}}>Blue</button>*/}
-
-
-
-                   {/*<p className="h1">{this.props.title}{this.props.subtitle}</p>*/}
-                   {/*<p className="h3">Name: {this.props.info.name}, City: {this.props.info.city}</p>*/}
-               </div>
-           );
-       }
-    
-
-
+        return (
+            <div>
+                <input ref={(input)=>{this.myText=input}} className="form-control" type="text" />
+                <button onClick={this.myClick} className="btn btn-outline-warning btn-danger">Submit</button>
+            </div>
+        );
     }
 }
 
 export default HomeBanner;
+
+// import React, {Component} from 'react';
+//
+// class HomeBanner extends Component {
+//     constructor() {
+//         super();
+//
+//         this.state={
+//             color: "green"
+//
+//         }
+//
+//
+//     }
+//     render() {
+//
+//        if (this.state.color==="red"){
+//            return (
+//                <div>
+//                    <button className="btn btn-danger" >{this.state.color}</button>
+//                    {/*<button className="btn btn-danger" onClick={()=>{this.setState({color:"Blue"})}}>Blue</button>*/}
+//
+//
+//
+//                    {/*<p className="h1">{this.props.title}{this.props.subtitle}</p>*/}
+//                    {/*<p className="h3">Name: {this.props.info.name}, City: {this.props.info.city}</p>*/}
+//                </div>
+//            );
+//
+//        } else if (this.state.color==="green"){
+//            return (
+//                <div>
+//                    <button className="btn btn-success" >{this.state.color}</button>
+//                    {/*<p className="h2" align="center" >State: {this.state.color}</p>*/}
+//                    {/*<button className="btn btn-success" onClick={()=>{this.setState({color:"green"})}}>Blue</button>*/}
+//
+//
+//
+//                    {/*<p className="h1">{this.props.title}{this.props.subtitle}</p>*/}
+//                    {/*<p className="h3">Name: {this.props.info.name}, City: {this.props.info.city}</p> {/*<p className="h2" align="center" >State: {this.state.color}</p>*/}
+//                    {/*<button className="btn btn-success" onClick={()=>{this.setState({color:"green"})}}>Blue</button>*/}
+//
+//
+//
+//                    {/*<p className="h1">{this.props.title}{this.props.subtitle}</p>*/}
+//                    {/*<p className="h3">Name: {this.props.info.name}, City: {this.props.info.city}</p>*/}
+//                </div>
+//            );
+//        }
+//
+//
+//
+//     }
+// }
+//
+// export default HomeBanner;
+
+
+
 //
 //
 // import React, {useEffect, useState} from 'react';
