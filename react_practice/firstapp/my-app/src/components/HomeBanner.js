@@ -1,24 +1,118 @@
 import React, {Component} from 'react';
+import axios from "axios";
 
 class HomeBanner extends Component {
+    constructor() {
+        super();
+        this.state={
+            toDoList:[]
+        }
 
-    myClick=()=>{
-        let myValue=this.myText.value;
-
-        alert(myValue)
     }
+
+    componentDidMount() {
+    //     api calling
+        axios.get("https://jsonplaceholder.typicode.com/todos/")
+            .then((res)=>{
+                this.setState({toDoList:res.data})
+
+
+            })
+            .catch((err)=>{})
+    }
+
     render() {
 
+        const myList= this.state.toDoList.map(
+            (list,i)=>{
+                return(
+                    <tr>
+                        <td>{list["userId"]}</td>
+                        <td>{list["id"]}</td>
+                        <td>{list["title"]}</td>
+                        {/*<td className="btn btn-info" onClick={ViewEvent.bind(this,list["id"])}>View</td>*/}
+                        {/*<td className="btn btn-success" onClick={EditEvent.bind(this,list["id"])}>Edit</td>*/}
+                        {/*<td className="btn btn-danger" onClick={DeleteEvent.bind(this,list["id"])}>Delete</td>*/}
+                    </tr>
+                )
+
+
+            }
+        )
         return (
             <div>
-                <input ref={(input)=>{this.myText=input}} className="form-control" type="text" />
-                <button onClick={this.myClick} className="btn btn-outline-warning btn-danger">Submit</button>
+                <table className="table table-striped">
+                    <thead>
+                    <th>User ID</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <td className="btn btn-info">View</td>
+                    <td className="btn btn-success">Edit</td>
+                    <td className="btn btn-danger">Delete</td>
+                    </thead>
+                    <tbody>{myList}</tbody>
+
+                </table>
             </div>
         );
     }
 }
 
 export default HomeBanner;
+
+
+
+// //use component Did mount
+//
+// import React, {Component} from 'react';
+//
+// class HomeBanner extends Component {
+//
+//     componentDidMount() {
+//         alert("Allah is Great")
+//     }
+//         myClick=()=>{
+//         let myValue=this.myText.value;
+//
+//         alert(myValue)
+//
+//     }
+//
+//     render() {
+//         return (
+//             <div>
+//                                 <input ref={(input)=>{this.myText=input}} className="form-control" type="text" placeholder="Allah is Great"/>
+//                                 <button onClick={this.myClick} className="btn btn-outline-warning btn-danger">Submit</button>
+//             </div>
+//         );
+//     }
+// }
+//
+// export default HomeBanner;
+// use ref component
+// import React, {Component} from 'react';
+//
+// class HomeBanner extends Component {
+//
+//     myClick=()=>{
+//         let myValue=this.myText.value;
+//
+//         alert(myValue)
+//
+//     }
+//     render() {
+//
+//         return (
+//             <div>
+//                 <input ref={(input)=>{this.myText=input}} className="form-control" type="text" />
+//                 <button onClick={this.myClick} className="btn btn-outline-warning btn-danger">Submit</button>
+//
+//             </div>
+//         );
+//     }
+// }
+//
+// export default HomeBanner;
 
 // import React, {Component} from 'react';
 //
