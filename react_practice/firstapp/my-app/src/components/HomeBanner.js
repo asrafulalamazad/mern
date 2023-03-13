@@ -21,15 +21,23 @@ class HomeBanner extends Component {
             .catch((err)=>{})
     }
 
+    viewClick=(title)=>{
+        alert(title)
+    }
     render() {
 
         const myList= this.state.toDoList.map(
-            (list,i)=>{
+            (list)=>{
                 return(
                     <tr>
                         <td>{list["userId"]}</td>
                         <td>{list["id"]}</td>
                         <td>{list["title"]}</td>
+                        <button onClick={this.viewClick.bind(this,list.title)} className="btn btn-info">View</button>
+                        <button className="btn btn-info">Edit</button>
+                        <button className="btn btn-info">Delete</button>
+
+
                         {/*<td className="btn btn-info" onClick={ViewEvent.bind(this,list["id"])}>View</td>*/}
                         {/*<td className="btn btn-success" onClick={EditEvent.bind(this,list["id"])}>Edit</td>*/}
                         {/*<td className="btn btn-danger" onClick={DeleteEvent.bind(this,list["id"])}>Delete</td>*/}
@@ -41,14 +49,14 @@ class HomeBanner extends Component {
         )
         return (
             <div>
-                <table className="table table-striped">
-                    <thead>
+                <table className="table table-hover ">
+                    <thead className='table-bordered'>
                     <th>User ID</th>
                     <th>ID</th>
                     <th>Title</th>
-                    <td className="btn btn-info">View</td>
-                    <td className="btn btn-success">Edit</td>
-                    <td className="btn btn-danger">Delete</td>
+                    <button className="btn btn-info">View</button>
+                    <button className="btn btn-success">Edit</button>
+                    <button className="btn btn-danger">Delete</button>
                     </thead>
                     <tbody>{myList}</tbody>
 
