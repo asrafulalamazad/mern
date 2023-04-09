@@ -1,6 +1,13 @@
 import React from 'react';
+import {useSelector} from "react-redux";
+
+
+
 
 const Counter = () => {
+
+const count= useSelector((state)=>state.counter.value)
+
     return (
         <div>
             <p className="h1  text-center"> Counter Application </p>
@@ -9,7 +16,7 @@ const Counter = () => {
                 <h3>Counter</h3>
                 </div>
                 <div className="card-body  text-bg-dark">
-                    <h2 className="">00</h2>
+                    <h2 className=""> {count} </h2>
                     <div className="btn btn-success">Increase</div>
                     <div className="btn mx-2 btn-danger">Decrease</div>
                 </div>
