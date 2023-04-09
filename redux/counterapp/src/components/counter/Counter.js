@@ -1,12 +1,17 @@
-import React from 'react';
-import {useSelector} from "react-redux";
+import React, {useRef} from 'react';
+import {useDispatch, useSelector} from "react-redux";
+import {decrement, increment, setCustom} from "../../redux/state/counter/counterSlice";
 
 
 
 
 const Counter = () => {
 
-const count= useSelector((state)=>state.counter.value)
+   const myNumber= useRef();
+
+    const count= useSelector((state)=>state.counter.value)
+    const dispatch = useDispatch();
+
 
     return (
         <div>
@@ -17,8 +22,16 @@ const count= useSelector((state)=>state.counter.value)
                 </div>
                 <div className="card-body  text-bg-dark">
                     <h2 className=""> {count} </h2>
-                    <div className="btn btn-success">Increase</div>
-                    <div className="btn mx-2 btn-danger">Decrease</div>
+                    <div className="my-4">
+                        <div onClick={()=>(dispatch(increment()))} className="btn btn-success">Increase</div>
+                        <div onClick={()=>(dispatch(decrement()))} className="btn mx-2 btn-danger">Decrease</div>
+                    </div>
+
+                    <div className="my-4">
+                        <input ref={myNumber} type="number" className="form-control"></input>
+                        <button  onClick={()=>(dispatch(setCustom(myNumber.current.value)))} className="btn mx-2 btn-danger">Set Value</button>
+                    </div>
+
                 </div>
                 <div className="card-footer text-bg-secondary">
                     <p>First Redux Application</p>
