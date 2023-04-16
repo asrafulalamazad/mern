@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f56066a-a2d2-44f0-bb1d-af9d66912ee9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../bootstrap_project/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bootstrap_project/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/firstapp/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../react_practice/firstapp/my-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/firstapp/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../react_practice/firstapp/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/firstapp/my-app/src/components/HomeBanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_practice/firstapp/my-app/src/components/HomeBanner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/firstapp/my-app/src/components/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_practice/firstapp/my-app/src/components/alert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/firstapp/my-app/src/components/manubar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_practice/firstapp/my-app/src/components/manubar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/firstapp/my-app/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react_practice/firstapp/my-app/src/pages/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/.idea/myapp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/src/components/HomeBanner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_practice/myapp/my-app/src/pages/HomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2O6mjRAwGbIrIuEnkISACboRh86" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f56066a-a2d2-44f0-bb1d-af9d66912ee9" name="Changes" comment="" />
+      <created>1680889542265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680889542265</updated>
+      <workItem from="1680889544449" duration="12000" />
+      <workItem from="1680889577513" duration="223000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

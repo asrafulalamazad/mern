@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="de06e603-9ce9-489b-9997-c12a0a99c4a6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../firstapp/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../firstapp/my-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstapp/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../firstapp/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstapp/my-app/src/components/HomeBanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../firstapp/my-app/src/components/HomeBanner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstapp/my-app/src/components/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/../firstapp/my-app/src/components/alert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstapp/my-app/src/components/manubar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../firstapp/my-app/src/components/manubar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstapp/my-app/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../firstapp/my-app/src/pages/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/.idea/myapp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/src/components/HomeBanner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/my-app/src/pages/HomePage.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2NkHuMZeYeelb7Z9SP2RV03rYPD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de06e603-9ce9-489b-9997-c12a0a99c4a6" name="Changes" comment="" />
+      <created>1680201384583</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680201384583</updated>
+      <workItem from="1680201386226" duration="3000" />
+    </task>
+    <servers />
+  </component>
+</project>
