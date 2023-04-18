@@ -1,43 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fb7d7368-3853-4683-97ea-dbf4b5d20987" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../bootstrap_project/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bootstrap_project/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/src/components/HomeBanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/src/components/HomeBanner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/src/components/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/src/components/alert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/src/components/manubar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/src/components/manubar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../react_practice/firstapp/my-app/src/pages/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/.idea/myapp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/src/components/HomeBanner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../react_practice/myapp/my-app/src/pages/HomePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../redux/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../redux/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../redux/index1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../redux/index2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../redux/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../redux/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../redux/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../note_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../note_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +35,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -76,6 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1681673237040</updated>
       <workItem from="1681673238690" duration="45000" />
+      <workItem from="1681673474139" duration="85000" />
+      <workItem from="1681754379682" duration="1310000" />
     </task>
     <servers />
   </component>
