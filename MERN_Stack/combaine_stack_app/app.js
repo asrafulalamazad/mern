@@ -1,10 +1,7 @@
 const express = require("express");
 const router = require("./src/routes/api");
-
 const app = new express();
 const bodyParser = require("body-parser");
-
-
 
 //Security Middleware import
 const rateLimit= require('express-rate-limit');
@@ -21,8 +18,8 @@ const path = require("path");
 //Security Middleware implements
 app.use(cors());
 app.use(helmet());
-app.use(mongoSanitize);
-app.use(hpp);
+app.use(mongoSanitize());
+app.use(hpp());
 app.use(xss());
 
 //bodyParser implements

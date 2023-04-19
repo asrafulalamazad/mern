@@ -3,7 +3,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p className="display-1">Front End </p>
+        <h1 className="display-1">Front End and Backend Project </h1>
       </header>
     </div>
   );
