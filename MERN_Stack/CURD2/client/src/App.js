@@ -4,7 +4,6 @@ const App = () => {
     return (
         <div>
             <h1 className="h1">CRUD Project</h1>
-            <h1 className="h1">CRUD Project</h1>
         </div>
     );
 };
