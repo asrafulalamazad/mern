@@ -1,25 +1,18 @@
 const express =require('express');
-const ProductsController=require("../controllers/ProductsController")
-const router =express.Router();
+const ProductsController = require('../controllers/ProductsController')
 
+const router = express.Router();
 
-// C=Create
-router.post("/CreateProduct",ProductsController.CreateProduct);
+//Create
+router.post("/InsertProduct", ProductsController.InsertProduct)
 
+//Read Product
+router.get("/ReadProduct", ProductsController.ReadProduct)
 
-// R=Read
-router.get("/ReadProduct",ProductsController.ReadProduct);
-router.get("/ReadProductByID/:id",ProductsController.ReadProductByID);
+//Update Product
+router.post("/UpdateProduc/:id", ProductsController.UpdateProduct)
 
+//Delete Product
+router.get("/DeleteProduct/:id", ProductsController.DeleteProduct)
 
-
-// U=Update
-router.post("/UpdateProduct/:id",ProductsController.UpdateProduct);
-
-
-// Delete
-router.get("/DeleteProduct/:id",ProductsController.DeleteProduct);
-
-
-
-module.exports=router;
+module.exports= router;
