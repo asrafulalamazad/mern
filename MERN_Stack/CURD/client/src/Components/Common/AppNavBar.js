@@ -1,5 +1,6 @@
 import React from 'react';
-import {Container, Nav, Navbar, NavDropdown, NavLink} from "react-bootstrap";
+import {Container, Nav, Navbar} from "react-bootstrap";
+ import {NavLink} from "react-router-dom";
 
 const AppNavBar = () => {
     return (
@@ -12,7 +13,6 @@ const AppNavBar = () => {
                         <Nav className="me-auto">
                             <Nav.Link ><NavLink to ="/">List</NavLink></Nav.Link>
                             <Nav.Link ><NavLink to ="/create">Create</NavLink></Nav.Link>
-
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

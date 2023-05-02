@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export function Create (ProductName,ProductCode, Img, Qty, TotalPrice  ){
+export function Create (ProductName,ProductCode, Img, Qty, UnitPrice, TotalPrice  ){
     let URL="api/v1/InsertProduct";
     let PostPody= {
         ProductName:ProductName,
@@ -72,7 +72,7 @@ export function Delete (id){
 
     })
 }
-export function Update (id,ProductName,ProductCode, Img, Qty, TotalPrice){
+export function Update (id,ProductName,ProductCode, Img, UnitPrice, Qty, TotalPrice){
     let URL="api/v1/DeleteProduct/"+id;
     let PostPody= {
         ProductName:ProductName,
