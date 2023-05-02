@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {ErrorToast, isEmpty, SuccessToast} from "../../Helper/ValidationHelper";
+import {ErrorToast, InfoToast, isEmpty, SuccessToast} from "../../Helper/ValidationHelper";
 import {Create} from "../../APIServices/CRUDServices";
 
 const CreateForm = () => {
@@ -36,6 +36,13 @@ const CreateForm = () => {
                 Create(Product_Name,Product_Code,Product_Img,Unit_Price, Product_Qty,Total_Price ).then((restul)=>{
                     if (restul===true){
                         SuccessToast("Request Success")
+
+                      ProductName.value = "";
+                      ProductCode.value  = "";
+                      Img.value = "";
+                      UnitPrice.value = "";
+                      Qty.value = "";
+                      TotalPrice.value = "";
                     }
                     else {
                         ErrorToast ("Request Failed")
@@ -47,6 +54,17 @@ const CreateForm = () => {
                 // SuccessToast("Success")
             }
 
+
+    }
+
+    const resetData=()=>{
+        ProductName.value = "";
+        ProductCode.value  = "";
+        Img.value = "";
+        UnitPrice.value = "";
+        Qty.value = "";
+        TotalPrice.value = "";
+        InfoToast ("Field reset")
 
     }
 
@@ -83,7 +101,7 @@ const CreateForm = () => {
                     <button onClick={SaveData} className="btn btn-outline-primary">Save Change</button>
                 </div>
                 <div className="col-md-4 p-2">
-                    <button onClick={SaveData} className="btn btn-outline-danger">Reset</button>
+                    <button onClick={resetData} className="btn btn-outline-danger">Reset</button>
                     {/*button End */}
                 </div>
             </div>

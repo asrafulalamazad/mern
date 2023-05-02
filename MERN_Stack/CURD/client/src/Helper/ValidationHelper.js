@@ -18,7 +18,11 @@ class validationHelper{
         cogoToast.error(msg, {position:"bottom-center"})
 
     }
+    InfoToast(msg){
+        cogoToast.info(msg, {position:"top-center"})
+
+    }
 
 }
-export const {isEmpty, SuccessToast, ErrorToast }= new validationHelper
+export const {isEmpty, SuccessToast, ErrorToast, InfoToast }= new validationHelper
 
