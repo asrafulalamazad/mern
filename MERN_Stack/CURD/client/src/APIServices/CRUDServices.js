@@ -58,7 +58,7 @@ export function ReadByID (id){
 
 
 export function Delete (id){
-    let URL="api/v1/InsertProduct/"+id;
+    let URL="api/v1/DeleteProduct/"+id;
     return axios.get(URL).then((res)=>{
         if(res.status===200){
             return true;

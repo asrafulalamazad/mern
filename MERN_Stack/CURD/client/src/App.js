@@ -13,7 +13,8 @@ const App = () => {
          <Fragment>
             <BrowserRouter>
                 <Routes>
-                     <Route exact path="/" Component={ReadPage}/>
+                     <Route exact path="/" render={(props)=> <ReadPage{...props} key = {Date.now()}/>}/>
+                    {/*<Route exact path="/" render ={(props)=> <ReadPage{...props} key ={Date.now()} />}/>*/}
                      <Route exact path="/create" Component={CreatePage}/>
                      <Route exact path="/update" Component={UpdatePage}/>
                 </Routes>
