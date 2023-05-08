@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {Delete, Read} from "../../APIServices/CRUDServices";
+import {Delete, Read, Update} from "../../APIServices/CRUDServices";
 import FullScreenLoader from "../Common/FullScreenLoader";
 import {ErrorToast, SuccessToast} from "../../Helper/ValidationHelper";
-import { withRouter } from "react-router";
+// import { withRouter } from "react-router";
 
 const ListTable = (props) => {
 
@@ -18,15 +18,28 @@ const ListTable = (props) => {
        Delete (id).then((result)=>{
             if (result===true){
                 SuccessToast("Delete Successful")
-                props.history.push("/")
+                // props.history.push("/")
             }
             else {
                 ErrorToast("Delete Failed")
             }
         })
-
-
     }
+
+    const UpdateItem = (id)=>{
+
+        Update (id).then((result)=>{
+            if (result===true){
+                SuccessToast("Update Successful")
+
+            }
+            else {
+                ErrorToast("Request failed typ letter")
+            }
+        })
+    }
+
+
 
    if(DataList.length>0){
        return (
@@ -59,8 +72,9 @@ const ListTable = (props) => {
                                <td>{item.TotalPrice}</td>
 
                                <td>
-                                   <button className="btn btn-primary m-2">Update</button>
+                                   <button onClick={UpdateItem.bind(this,item._id)} className="btn btn-primary m-2">Update</button>
                                    <button onClick={DeleteItem.bind(this,item._id)} className="btn btn-danger m-2">Delete</button>
+
                                </td>
                            </tr>
                        )
@@ -85,4 +99,5 @@ const ListTable = (props) => {
 
 };
 
-export default withRouter(ListTable);
+export default (ListTable);
+// export default withRouter(ListTable);

@@ -6,7 +6,7 @@ const FullScreenLoader = () => {
         <div>
             <div className="ProcessingDiv">
                 <div className="center-screen">
-                    <img className="loader-size" src={loader}/>
+                    <img className="loader-size" src={loader} />
                     {/*<img className="loader-size" src={loader}/>*/}
                 </div>
             </div>

@@ -24,5 +24,5 @@ class validationHelper{
     }
 
 }
-export const {isEmpty, SuccessToast, ErrorToast, InfoToast }= new validationHelper
+export const {isEmpty, SuccessToast, ErrorToast, InfoToast }= new validationHelper();
 
