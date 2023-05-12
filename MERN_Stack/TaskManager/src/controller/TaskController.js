@@ -47,37 +47,12 @@ exports.updateTaskStatus= (req,res)=>{
 
 }
 
-// exports.listTaskByStatus= (req,res)=>{
-//     let status= req.params.status;
-//     let email = req.headers['email'];
-//
-//     TaskModel.aggregate([
-//         {$match:{status: status, email: email}},
-//         {$project:{
-//                 _id:1,title:1,description:1, status:1,
-//                 createDate:{
-//                     dateToString:{
-//                         date:"$createDate",
-//                         format:"%d-%m-%Y"
-//                     }
-//                 }
-//             }
-//         }
-//     ],(err,data)=>{
-//         if(err){
-//             res.status(400).json({status:"Query Fail", data: err})
-//         }
-//         else {
-//             res.status(200).json({status:"Success", data: data})
-//         }
-//     })
-// }
-
-exports.listTaskByStatus=(req,res)=>{
+exports.listTaskByStatus= (req,res)=>{
     let status= req.params.status;
-    let email=req.headers['email'];
-    TasksModel.aggregate([
-        {$match:{status:status,email:email}},
+    let email = req.headers['email'];
+
+    TaskModel.aggregate([
+        {$match:{status: status, email: email}},
         {$project:{
                 _id:1,title:1,description:1, status:1,
                 createDate:{
@@ -86,14 +61,39 @@ exports.listTaskByStatus=(req,res)=>{
                         format:"%d-%m-%Y"
                     }
                 }
-            }}
-    ], (err,data)=>{
-        if(err){
-            res.status(400).json({status:"fail",data:err})
+            }
         }
-        else{
-            res.status(200).json({status:"success",data:data})
+    ],(err,data)=>{
+        if(err){
+            res.status(400).json({status:"Query Fail", data: err})
+        }
+        else {
+            res.status(200).json({status:"Success", data: data})
         }
     })
 }
 
+// exports.listTaskByStatus=(req,res)=>{
+//     let status= req.params.status;
+//     let email=req.headers['email'];
+//     TaskModel.aggregate([
+//         {$match:{status:status,email:email}},
+//         {$project:{
+//                 _id:1,title:1,description:1, status:1,
+//                 createDate:{
+//                     $dateToString:{
+//                         date:"$createDate",
+//                         format:"%d-%m-%Y"
+//                     }
+//                 }
+//             }}
+//     ], (err,data)=>{
+//         if(err){
+//             res.status(400).json({status:"fail",data:err})
+//         }
+//         else{
+//             res.status(200).json({status:"success",data:data})
+//         }
+//     })
+// }
+//
