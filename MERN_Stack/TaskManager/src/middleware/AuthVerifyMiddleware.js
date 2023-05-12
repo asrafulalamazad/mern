@@ -13,7 +13,6 @@ module.exports = (req, res, next)=>{
             console.log(email);
             req.headers.email= email;
             next();
-
         }
     });
 }
