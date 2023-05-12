@@ -14,10 +14,13 @@ router.post("/profileUpdate",AuthVerifyMiddleware , UserController.profileUpdate
 
 
 //task
+//post
 router.post("/createTask", AuthVerifyMiddleware,TaskController.createTask);
+
+// get
 router.get("/deleteTask/:id", AuthVerifyMiddleware,TaskController.deleteTask);
 router.get("/updateTaskStatus/:id/:status", AuthVerifyMiddleware,TaskController.updateTaskStatus);
 router.get("/listTaskByStatus/:status", AuthVerifyMiddleware,TaskController.listTaskByStatus);
+router.get("/taskStatusCount", AuthVerifyMiddleware,TaskController.taskStatusCount);
 
 module.exports = router;
-
