@@ -11,6 +11,7 @@ import LoginPage from "./pages/Login-Page";
 import RegistrationPage from "./pages/Registration-Page";
 import ForgetpassPage from "./pages/Forgetpass-Page";
 import Page404 from "./pages/Page-404";
+import FullscreenLoader from "./components/masterLayout/Fullscreen-Loader";
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
 
                 </Routes>
             </BrowserRouter>
+            <FullscreenLoader/>
         </Fragment>
     );
 };

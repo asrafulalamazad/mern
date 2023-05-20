@@ -1,9 +1,14 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, lazy, Suspense} from 'react';
+import LazyLoader from "../components/masterLayout/LazyLoader";
+const Login = lazy(()=>import("../components/Login/Login"))
 
 const LoginPage = () => {
     return (
         <Fragment>
-            LoginPage
+            <Suspense fallback={<LazyLoader/>}>
+                <Login/>S
+
+            </Suspense>
         </Fragment>
     );
 };
