@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import MasterLayout from "../components/masterLayout/Master-Layout";
 
 const NewPage = () => {
     return (
-        <div>
-            NewPage
-        </div>
+        <Fragment>
+            <MasterLayout>
+
+            </MasterLayout>
+        </Fragment>
     );
 };
 

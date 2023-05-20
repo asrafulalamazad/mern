@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import MasterLayout from "../components/masterLayout/Master-Layout";
+import {Cancel} from "axios";
+import Canceled from "../components/Canceled/Canceled";
 
 const CanceledPage = () => {
     return (
-        <div>
-            <h1> CanceledPage</h1>
-        </div>
+        <Fragment>
+            <MasterLayout>
+                <Canceled/>
+            </MasterLayout>
+        </Fragment>
     );
 };
 

@@ -6,8 +6,7 @@ const DashboardPage = () => {
     return (
         <Fragment>
                 <MasterLayout>
-                  <Dashboard/>
-
+                    <Dashboard/>
                 </MasterLayout>
 
         </Fragment>
