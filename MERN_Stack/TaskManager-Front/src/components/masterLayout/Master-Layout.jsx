@@ -1,6 +1,6 @@
 import React, {Fragment, useRef} from "react";
 import {Container,Navbar} from "react-bootstrap";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 
 import logo from "../../assets/images/logo.svg";
@@ -9,6 +9,8 @@ import {AiOutlineCheckCircle, AiOutlineEdit,AiOutlineUser,AiOutlineLogout, AiOut
 import {BsHourglass, BsListNested} from "react-icons/bs";
 import {MdOutlineCancelPresentation } from "react-icons/md";
 import {RiDashboardLine} from "react-icons/ri";
+import {BiCopyright} from "react-icons/bi";
+import {CiFacebook, CiLinkedin, CiPhone, CiTwitter} from "react-icons/ci";
 
 
 
@@ -113,6 +115,8 @@ const MasterLayout = (props) => {
             <div ref={(div) => contentRef = div} className="content">
                 {props.children}
             </div>
+
+
 
         </Fragment>
     );

@@ -1,9 +1,9 @@
 import React, {Fragment, useRef} from 'react';
 import {Link} from "react-router-dom";
+import {BiCopyright} from "react-icons/bi";
+import {CiFacebook, CiLinkedin, CiPhone, CiTwitter, CiYoutube} from "react-icons/ci";
 
 const Login = () => {
-
-
 
     return (
         <Fragment>
@@ -27,12 +27,23 @@ const Login = () => {
                                         <span className="ms-1">|</span>
                                         <Link className="text-center ms-3 h6 animated fadeInUp" to="/SendOTP">Forget Password</Link>
                                     </span>
-
                                 </div>
 
-
                             </div>
+                            <span className="d-flex justify-content-between">
+                                         <Link className="text-center text-bold ms-3  animated fadeInUp" to="https://www.facebook.com/asrafulalamazaad/"> <BiCopyright/>  ASRAFUL ALAM AZAD </Link>
+                                        <span className="h5 text-dark">
+                                            <Link className="text-center ms-3  animated fadeInUp" to="https://www.facebook.com/asrafulalamazaad/"><CiFacebook/> </Link>
+                                            {/*<span className="ms-1">|</span>*/}
+                                            <Link className="text-center ms-3  animated fadeInUp" to="https://www.twitter.com/asraful1988/"><CiTwitter/> </Link>
+                                            {/*<span className="ms-1">|</span>*/}
+                                            <Link className="text-center ms-3  animated fadeInUp" to="https://www.Linkedin.com/asrafulalamazaad/"><CiLinkedin/> </Link>
+                                            <Link className="text-center ms-3  animated fadeInUp" to="/contact"><CiPhone/> </Link>
+                                        </span>
+                            </span>
+
                         </div>
+
                     </div>
                 </div>
             </div>
