@@ -32,7 +32,7 @@ const Completed = () => {
                                     <AiOutlineCalendar/>Azad
                                     <a  className="icon-nav text-primary mx-1"><AiOutlineEdit /></a>
                                     <a  className="icon-nav text-danger mx-1"><AiOutlineDelete /></a>
-                                    <a className="badge float-end bg-info">New</a>
+                                    <a className="badge float-end bg-warning">Completed</a>
                                 </p>
                             </div>
                         </div>

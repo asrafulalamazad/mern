@@ -2,8 +2,35 @@ import React, {Fragment, useRef} from 'react';
 import {Link} from "react-router-dom";
 import {BiCopyright} from "react-icons/bi";
 import {CiFacebook, CiLinkedin, CiPhone, CiTwitter, CiYoutube} from "react-icons/ci";
+import {ErrorToast, IsEmail, IsEmpty, SuccessToast} from "../../helper/FormHelper";
 
 const Login = () => {
+
+    let emailRef,passwordRef= useRef();
+
+    const goNext= () =>{
+        let email=  emailRef.value;
+
+        let password = passwordRef.value;
+
+        if(!IsEmail(email)){
+            ErrorToast("Valid email Address Required !!!")
+
+        }
+        else if(IsEmpty(password)){
+            ErrorToast("Password Needed")
+
+
+        } else
+
+        {
+            SuccessToast("Ready to Login")
+        }
+
+    }
+
+
+
 
     return (
         <Fragment>
@@ -14,11 +41,11 @@ const Login = () => {
                             <div className="card-body">
                                 <h4>SIGN IN</h4>
                                 <br/>
-                                <input placeholder="User Email" className="form-control animated fadeInUp" type="email"/>
+                                <input ref={(input)=>emailRef=input} placeholder="User Email" className="form-control animated fadeInUp" type="email"/>
                                 <br/>
-                                <input  placeholder="User Password" className="form-control animated fadeInUp" type="password"/>
+                                <input ref={(input)=>passwordRef=input} placeholder="User Password" className="form-control animated fadeInUp" type="password"/>
                                 <br/>
-                                <button className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
+                                <button onClick={goNext} className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
                                 <hr/>
                                 <div className="float-end mt-3">
 

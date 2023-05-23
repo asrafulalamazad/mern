@@ -29,10 +29,10 @@ const Canceled = () => {
                                 <h6 className="animated fadeInUp">Azad</h6>
                                 <p className="animated fadeInUp">Azad</p>
                                 <p className="m-0 animated fadeInUp p-0">
-                                    <AiOutlineCalendar/>Azad
+                                    <AiOutlineCalendar/>20/04/2022
                                     <a  className="icon-nav text-primary mx-1"><AiOutlineEdit /></a>
                                     <a  className="icon-nav text-danger mx-1"><AiOutlineDelete /></a>
-                                    <a className="badge float-end bg-info">New</a>
+                                    <a className="badge float-end bg-danger">Canceled</a>
                                 </p>
                             </div>
                         </div>

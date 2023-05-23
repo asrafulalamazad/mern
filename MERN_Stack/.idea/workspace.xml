@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c992e9dd-535d-4a45-9c0d-731d2574137b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/CURD_/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/.idea/CURD2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/.idea/client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/APIServices/CRUDServices.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/APIServices/Demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Assets/css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Assets/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Assets/css/fontawesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Assets/img/loader.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Assets/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Components/Common/AppNavBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Components/Common/FullScreenLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Components/Create/CreateForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Components/Read/ListTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Components/Update/UpdateForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Helper/ValidationHelper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Pages/CreatePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Pages/ReadPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/Pages/UpdatePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/src/controllers/ProductsController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/src/models/ProductsModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CURD_/src/routes/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbil" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2PWPVZaKwsMpOZroGJAl3TrGvhI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c992e9dd-535d-4a45-9c0d-731d2574137b" name="Changes" comment="" />
+      <created>1683569896811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683569896811</updated>
+      <workItem from="1683569898016" duration="6000" />
+    </task>
+    <servers />
+  </component>
+</project>
