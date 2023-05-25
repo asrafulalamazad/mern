@@ -1,5 +1,6 @@
 import React, {Fragment, useRef} from 'react';
 import {Link, useNavigate} from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import {BiCopyright} from "react-icons/bi";
 import {CiFacebook, CiLinkedin, CiPhone, CiTwitter} from "react-icons/ci";
 
@@ -48,8 +49,10 @@ const Registration = () => {
             } else{
                RegistrationRequest(email,firstName,lastName,mobile,password).then((result)=>{
                    if(result===true){
-                       SuccessToast("Registration Success")
+                      //SuccessToast("Registration Success")
                        // navigate("/login")
+                 //      Navigate("https://rabbil.com/myCoursesDetails?id=632d7ebfbe4399c3d8ca0590/login");
+
                    }
                })
            }
