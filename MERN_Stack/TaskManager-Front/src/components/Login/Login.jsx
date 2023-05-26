@@ -1,16 +1,16 @@
 import React, {Fragment, useRef} from 'react';
 import {Link} from "react-router-dom";
 import {BiCopyright} from "react-icons/bi";
-import {CiFacebook, CiLinkedin, CiPhone, CiTwitter, CiYoutube} from "react-icons/ci";
-import {ErrorToast, IsEmail, IsEmpty, SuccessToast} from "../../helper/FormHelper";
+import {CiFacebook, CiLinkedin, CiPhone, CiTwitter} from "react-icons/ci";
+import {ErrorToast, IsEmail, IsEmpty} from "../../helper/FormHelper";
+import {LoginRequest} from "../../APIRequest/APIRequest";
 
 const Login = () => {
 
     let emailRef,passwordRef= useRef();
 
-    const goNext= () =>{
+    const SubmitLogin= () =>{
         let email=  emailRef.value;
-
         let password = passwordRef.value;
 
         if(!IsEmail(email)){
@@ -24,13 +24,16 @@ const Login = () => {
         } else
 
         {
-            SuccessToast("Ready to Login")
+            LoginRequest(email, password).then((result)=>{
+                if (result===true){
+                    window.location.href="/";
+                }
+            }
+            )
+
         }
 
     }
-
-
-
 
     return (
         <Fragment>
@@ -45,7 +48,7 @@ const Login = () => {
                                 <br/>
                                 <input ref={(input)=>passwordRef=input} placeholder="User Password" className="form-control animated fadeInUp" type="password"/>
                                 <br/>
-                                <button onClick={goNext} className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
+                                <button onClick={SubmitLogin} className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
                                 <hr/>
                                 <div className="float-end mt-3">
 
