@@ -1,8 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-
-export const settingSlice= createSlice({
-    name: "setting",
+export const settingsSlice= createSlice({
+    name: "settings",
     initialState:{
         loader: "d-none"
        },
@@ -12,11 +11,10 @@ export const settingSlice= createSlice({
         }  ,
         HideLoader: (state)=>{
             state.loader= "d-none"
-
         }
     }
 
 })
 
-export const {ShowLoader, HideLoader} = settingSlice.actions;
-export default settingSlice.reducer;
+export const {ShowLoader, HideLoader} = settingsSlice.actions;
+export default settingsSlice.reducer;

@@ -31,9 +31,6 @@ const App = () => {
                     <Route exact path="/Forgetpass" element={<ForgetpassPage/>}/>
                     <Route  path="*" element={<Page404/>}/>
 
-
-
-
                 </Routes>
             </BrowserRouter>
             <FullscreenLoader/>
